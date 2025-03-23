@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Items Alignment</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        .container{
+            display: grid;
+            width: 600px;
+            margin: 40px auto 0;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 100px);
+            grid-auto-flow: row;
+            grid-auto-rows: 80px;
+            /* align-items: end;
+            justify-items: start; */
+            place-items: end start;
+          
+
+        }
+        .items1{
+            background-color: yellowgreen;
+        }
+        .items2{
+            background-color: orangered;
+            /* align-self: start;
+            justify-self: end; */
+            place-self: start end;
+        }
+        .items3{
+            background-color: royalblue;
+        }
+        .items4{
+            background-color: hotpink;
+        }
+        .items5{
+            background-color: slateblue;
+        }
+        .items6{
+            background-color: goldenrod;
+        }
+        .items7{
+            background-color: mediumorchid;
+        }
+        .items8{
+            background-color: greenyellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Grid Items Alignment</h1>
+    <div class="container">
+        <div class="items items1">One</div>
+        <div class="items items2">Two</div>
+        <div class="items items3">Three</div>
+        <div class="items items4">Four</div>
+        <div class="items items5">Five</div>
+        <div class="items items6">Six</div>
+        <div class="items items7">Seven</div>
+        <div class="items items8">Eight</div>
+    </div>
+    
+</body>
+</html>
